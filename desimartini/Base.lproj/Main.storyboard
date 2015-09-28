@@ -33,7 +33,6 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="fai-fj-Rxd">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.60392159219999997" green="0.75294125079999996" blue="0.9215686917" alpha="1" colorSpace="deviceRGB"/>
                     </navigationBar>
                     <connections>
                         <segue destination="A1B-02-3vY" kind="relationship" relationship="rootViewController" id="g7y-wS-WfX"/>
