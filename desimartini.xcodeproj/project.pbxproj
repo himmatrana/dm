@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5F5DDF301BB4197500F43EBE /* Menu-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F5DDF2F1BB4197500F43EBE /* Menu-50.png */; settings = {ASSET_TAGS = (); }; };
+		5F0411A61BB91ED80068DC0B /* MovieListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F0411A51BB91ED80068DC0B /* MovieListViewController.m */; settings = {ASSET_TAGS = (); }; };
 		5FF672D81BB403DC00AAB1AB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FF672D71BB403DC00AAB1AB /* main.m */; };
 		5FF672DB1BB403DC00AAB1AB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FF672DA1BB403DC00AAB1AB /* AppDelegate.m */; };
 		5FF672E11BB403DC00AAB1AB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FF672DF1BB403DC00AAB1AB /* Main.storyboard */; };
@@ -20,7 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		5F5DDF2F1BB4197500F43EBE /* Menu-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Menu-50.png"; sourceTree = "<group>"; };
+		5F0411A41BB91ED80068DC0B /* MovieListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovieListViewController.h; sourceTree = "<group>"; };
+		5F0411A51BB91ED80068DC0B /* MovieListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovieListViewController.m; sourceTree = "<group>"; };
 		5FF672D31BB403DC00AAB1AB /* desimartini.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = desimartini.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FF672D71BB403DC00AAB1AB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5FF672D91BB403DC00AAB1AB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -51,10 +52,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5F0411A31BB91EA70068DC0B /* movie */ = {
+			isa = PBXGroup;
+			children = (
+				5F0411A41BB91ED80068DC0B /* MovieListViewController.h */,
+				5F0411A51BB91ED80068DC0B /* MovieListViewController.m */,
+			);
+			name = movie;
+			sourceTree = "<group>";
+		};
 		5F5DDF2D1BB4172B00F43EBE /* images */ = {
 			isa = PBXGroup;
 			children = (
-				5F5DDF2F1BB4197500F43EBE /* Menu-50.png */,
 			);
 			name = images;
 			sourceTree = "<group>";
@@ -93,6 +102,7 @@
 			children = (
 				5FF672DF1BB403DC00AAB1AB /* Main.storyboard */,
 				5F5DDF2E1BB4176100F43EBE /* base */,
+				5F0411A31BB91EA70068DC0B /* movie */,
 				5FF672D91BB403DC00AAB1AB /* AppDelegate.h */,
 				5FF672FC1BB4072400AAB1AB /* Constants.h */,
 				5FF672DA1BB403DC00AAB1AB /* AppDelegate.m */,
@@ -182,7 +192,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				5FF672E61BB403DC00AAB1AB /* LaunchScreen.storyboard in Resources */,
-				5F5DDF301BB4197500F43EBE /* Menu-50.png in Resources */,
 				5FF672E31BB403DC00AAB1AB /* Assets.xcassets in Resources */,
 				5FF672E11BB403DC00AAB1AB /* Main.storyboard in Resources */,
 			);
@@ -198,6 +207,7 @@
 				5FF672DB1BB403DC00AAB1AB /* AppDelegate.m in Sources */,
 				5FF672FB1BB406EA00AAB1AB /* BaseViewController.m in Sources */,
 				5FF672D81BB403DC00AAB1AB /* main.m in Sources */,
+				5F0411A61BB91ED80068DC0B /* MovieListViewController.m in Sources */,
 				5FF672F81BB4045B00AAB1AB /* SWRevealViewController.m in Sources */,
 				5FF672EF1BB403FE00AAB1AB /* HomeViewController.m in Sources */,
 				5FF672F21BB4040B00AAB1AB /* MenuViewController.m in Sources */,
