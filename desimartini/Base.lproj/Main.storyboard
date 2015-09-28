@@ -90,6 +90,9 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="0JQ-mJ-Wwa" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="fPd-CD-0Yq"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="movies" id="1lO-yl-O6l">
                                         <rect key="frame" x="0.0" y="116" width="320" height="44"/>
@@ -128,7 +131,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x3G-VC-l3Z" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="486" y="-491"/>
+            <point key="canvasLocation" x="381" y="279"/>
         </scene>
         <!--Movies-->
         <scene sceneID="I98-ac-7vc">
@@ -200,4 +203,7 @@
     <resources>
         <image name="menu" width="22" height="22"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="fPd-CD-0Yq"/>
+    </inferredMetricsTieBreakers>
 </document>
