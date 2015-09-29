@@ -18,6 +18,8 @@
     [super viewDidLoad];
 
     //self.navigationController.navigationBar.barTintColor = [UIColor brownColor];
+    self.navigationController.navigationBar.barTintColor = [UIColor colorWithRed:(229/255.0) green:(52/255.0) blue:(51/255.0) alpha:1.0];
+    
     
 }
 

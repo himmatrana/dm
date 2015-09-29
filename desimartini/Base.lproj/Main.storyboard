@@ -325,7 +325,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ayK-fv-qfM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1859" y="-912"/>
+            <point key="canvasLocation" x="1755" y="-1163"/>
         </scene>
         <!--Movies-->
         <scene sceneID="I98-ac-7vc">
@@ -409,7 +409,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jZj-TP-Gf3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1496" y="-912"/>
+            <point key="canvasLocation" x="1398" y="-1163"/>
         </scene>
     </scenes>
     <resources>

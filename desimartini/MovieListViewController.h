@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BaseViewController.h"
 
-@interface MovieListViewController : UIViewController
+@interface MovieListViewController : BaseViewController
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *sidebarButton;
 @end

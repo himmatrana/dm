@@ -8,8 +8,8 @@
 
 #import <UIKit/UIKit.h>
 //#import "Constants.h"
-
-@interface HomeViewController : UIViewController
+#import "BaseViewController.h"
+@interface HomeViewController : BaseViewController
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *sidebarButton;
 
 @end
