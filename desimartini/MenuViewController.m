@@ -17,7 +17,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.menuItems = @[@"userinfo",@"home",@"movies",@"martini",@"news",@"blank",@"logout",@"feedback",@"rate_us",@"help"]; //, @"movies", @"martini", @"news"];
+    self.menuItems = @[@"userinfo",@"home",@"movies",@"videos",@"photos",@"martini",@"news",@"blank_line",@"mylist",@"read_later",@"rated",@"watchlist",@"help"]; //, @"movies", @"martini", @"news"];
     
     
 }

@@ -12,6 +12,10 @@
 		5F0411C01BBA49960068DC0B /* home@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F0411BC1BBA49960068DC0B /* home@2x.png */; settings = {ASSET_TAGS = (); }; };
 		5F0411C11BBA49960068DC0B /* movie.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F0411BD1BBA49960068DC0B /* movie.png */; settings = {ASSET_TAGS = (); }; };
 		5F0411C21BBA49960068DC0B /* movie@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F0411BE1BBA49960068DC0B /* movie@2x.png */; settings = {ASSET_TAGS = (); }; };
+		5F0411C41BBA65F50068DC0B /* ic_video.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F0411C31BBA65F50068DC0B /* ic_video.png */; settings = {ASSET_TAGS = (); }; };
+		5F0411C61BBA66250068DC0B /* ic_photo.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F0411C51BBA66250068DC0B /* ic_photo.png */; settings = {ASSET_TAGS = (); }; };
+		5F0411C81BBA66470068DC0B /* ic_martinishots.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F0411C71BBA66470068DC0B /* ic_martinishots.png */; settings = {ASSET_TAGS = (); }; };
+		5F0411CA1BBA67660068DC0B /* ic_news.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F0411C91BBA67660068DC0B /* ic_news.png */; settings = {ASSET_TAGS = (); }; };
 		5FF672D81BB403DC00AAB1AB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FF672D71BB403DC00AAB1AB /* main.m */; };
 		5FF672DB1BB403DC00AAB1AB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FF672DA1BB403DC00AAB1AB /* AppDelegate.m */; };
 		5FF672E11BB403DC00AAB1AB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FF672DF1BB403DC00AAB1AB /* Main.storyboard */; };
@@ -30,6 +34,10 @@
 		5F0411BC1BBA49960068DC0B /* home@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "home@2x.png"; sourceTree = "<group>"; };
 		5F0411BD1BBA49960068DC0B /* movie.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = movie.png; sourceTree = "<group>"; };
 		5F0411BE1BBA49960068DC0B /* movie@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "movie@2x.png"; sourceTree = "<group>"; };
+		5F0411C31BBA65F50068DC0B /* ic_video.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_video.png; sourceTree = "<group>"; };
+		5F0411C51BBA66250068DC0B /* ic_photo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_photo.png; sourceTree = "<group>"; };
+		5F0411C71BBA66470068DC0B /* ic_martinishots.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_martinishots.png; sourceTree = "<group>"; };
+		5F0411C91BBA67660068DC0B /* ic_news.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_news.png; sourceTree = "<group>"; };
 		5FF672D31BB403DC00AAB1AB /* desimartini.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = desimartini.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FF672D71BB403DC00AAB1AB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5FF672D91BB403DC00AAB1AB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -72,6 +80,10 @@
 		5F5DDF2D1BB4172B00F43EBE /* images */ = {
 			isa = PBXGroup;
 			children = (
+				5F0411C91BBA67660068DC0B /* ic_news.png */,
+				5F0411C71BBA66470068DC0B /* ic_martinishots.png */,
+				5F0411C51BBA66250068DC0B /* ic_photo.png */,
+				5F0411C31BBA65F50068DC0B /* ic_video.png */,
 				5F0411BB1BBA49960068DC0B /* home.png */,
 				5F0411BC1BBA49960068DC0B /* home@2x.png */,
 				5F0411BD1BBA49960068DC0B /* movie.png */,
@@ -195,8 +207,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F0411C81BBA66470068DC0B /* ic_martinishots.png in Resources */,
 				5F0411C21BBA49960068DC0B /* movie@2x.png in Resources */,
+				5F0411C41BBA65F50068DC0B /* ic_video.png in Resources */,
 				5F0411C01BBA49960068DC0B /* home@2x.png in Resources */,
+				5F0411CA1BBA67660068DC0B /* ic_news.png in Resources */,
+				5F0411C61BBA66250068DC0B /* ic_photo.png in Resources */,
 				5F0411BF1BBA49960068DC0B /* home.png in Resources */,
 				5F0411C11BBA49960068DC0B /* movie.png in Resources */,
 				5FF672E61BB403DC00AAB1AB /* LaunchScreen.storyboard in Resources */,
