@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		5F0411A61BB91ED80068DC0B /* MovieListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F0411A51BB91ED80068DC0B /* MovieListViewController.m */; settings = {ASSET_TAGS = (); }; };
+		5F0411BF1BBA49960068DC0B /* home.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F0411BB1BBA49960068DC0B /* home.png */; settings = {ASSET_TAGS = (); }; };
+		5F0411C01BBA49960068DC0B /* home@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F0411BC1BBA49960068DC0B /* home@2x.png */; settings = {ASSET_TAGS = (); }; };
+		5F0411C11BBA49960068DC0B /* movie.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F0411BD1BBA49960068DC0B /* movie.png */; settings = {ASSET_TAGS = (); }; };
+		5F0411C21BBA49960068DC0B /* movie@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F0411BE1BBA49960068DC0B /* movie@2x.png */; settings = {ASSET_TAGS = (); }; };
 		5FF672D81BB403DC00AAB1AB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FF672D71BB403DC00AAB1AB /* main.m */; };
 		5FF672DB1BB403DC00AAB1AB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FF672DA1BB403DC00AAB1AB /* AppDelegate.m */; };
 		5FF672E11BB403DC00AAB1AB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FF672DF1BB403DC00AAB1AB /* Main.storyboard */; };
@@ -22,6 +26,10 @@
 /* Begin PBXFileReference section */
 		5F0411A41BB91ED80068DC0B /* MovieListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovieListViewController.h; sourceTree = "<group>"; };
 		5F0411A51BB91ED80068DC0B /* MovieListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovieListViewController.m; sourceTree = "<group>"; };
+		5F0411BB1BBA49960068DC0B /* home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home.png; sourceTree = "<group>"; };
+		5F0411BC1BBA49960068DC0B /* home@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "home@2x.png"; sourceTree = "<group>"; };
+		5F0411BD1BBA49960068DC0B /* movie.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = movie.png; sourceTree = "<group>"; };
+		5F0411BE1BBA49960068DC0B /* movie@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "movie@2x.png"; sourceTree = "<group>"; };
 		5FF672D31BB403DC00AAB1AB /* desimartini.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = desimartini.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FF672D71BB403DC00AAB1AB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5FF672D91BB403DC00AAB1AB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -64,6 +72,10 @@
 		5F5DDF2D1BB4172B00F43EBE /* images */ = {
 			isa = PBXGroup;
 			children = (
+				5F0411BB1BBA49960068DC0B /* home.png */,
+				5F0411BC1BBA49960068DC0B /* home@2x.png */,
+				5F0411BD1BBA49960068DC0B /* movie.png */,
+				5F0411BE1BBA49960068DC0B /* movie@2x.png */,
 			);
 			name = images;
 			sourceTree = "<group>";
@@ -191,6 +203,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F0411C21BBA49960068DC0B /* movie@2x.png in Resources */,
+				5F0411C01BBA49960068DC0B /* home@2x.png in Resources */,
+				5F0411BF1BBA49960068DC0B /* home.png in Resources */,
+				5F0411C11BBA49960068DC0B /* movie.png in Resources */,
 				5FF672E61BB403DC00AAB1AB /* LaunchScreen.storyboard in Resources */,
 				5FF672E31BB403DC00AAB1AB /* Assets.xcassets in Resources */,
 				5FF672E11BB403DC00AAB1AB /* Main.storyboard in Resources */,
@@ -320,6 +336,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = desimartini/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.desimartini;
@@ -331,6 +348,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = desimartini/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.desimartini;
