@@ -42,8 +42,8 @@
 		5FF672EE1BB403FE00AAB1AB /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		5FF672F01BB4040B00AAB1AB /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
 		5FF672F11BB4040B00AAB1AB /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
-		5FF672F61BB4045B00AAB1AB /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
-		5FF672F71BB4045B00AAB1AB /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		5FF672F61BB4045B00AAB1AB /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SWRevealViewController.h; path = ../SWRevealViewController/SWRevealViewController.h; sourceTree = "<group>"; };
+		5FF672F71BB4045B00AAB1AB /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SWRevealViewController.m; path = ../SWRevealViewController/SWRevealViewController.m; sourceTree = "<group>"; };
 		5FF672F91BB406EA00AAB1AB /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
 		5FF672FA1BB406EA00AAB1AB /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
 		5FF672FC1BB4072400AAB1AB /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
@@ -83,6 +83,8 @@
 		5F5DDF2E1BB4176100F43EBE /* base */ = {
 			isa = PBXGroup;
 			children = (
+				5FF672F61BB4045B00AAB1AB /* SWRevealViewController.h */,
+				5FF672F71BB4045B00AAB1AB /* SWRevealViewController.m */,
 				5FF672ED1BB403FE00AAB1AB /* HomeViewController.h */,
 				5FF672EE1BB403FE00AAB1AB /* HomeViewController.m */,
 				5FF672F01BB4040B00AAB1AB /* MenuViewController.h */,
@@ -118,7 +120,6 @@
 				5FF672D91BB403DC00AAB1AB /* AppDelegate.h */,
 				5FF672FC1BB4072400AAB1AB /* Constants.h */,
 				5FF672DA1BB403DC00AAB1AB /* AppDelegate.m */,
-				5FF672F51BB4045B00AAB1AB /* SWRevealViewController */,
 				5FF672E21BB403DC00AAB1AB /* Assets.xcassets */,
 				5FF672E41BB403DC00AAB1AB /* LaunchScreen.storyboard */,
 				5FF672E71BB403DC00AAB1AB /* Info.plist */,
@@ -135,15 +136,6 @@
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
-		};
-		5FF672F51BB4045B00AAB1AB /* SWRevealViewController */ = {
-			isa = PBXGroup;
-			children = (
-				5FF672F61BB4045B00AAB1AB /* SWRevealViewController.h */,
-				5FF672F71BB4045B00AAB1AB /* SWRevealViewController.m */,
-			);
-			path = SWRevealViewController;
-			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
