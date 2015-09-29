@@ -219,7 +219,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="28"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="movie.png" translatesAutoresizingMaskIntoConstraints="NO" id="VvR-54-Ubm">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ic_rated.png" translatesAutoresizingMaskIntoConstraints="NO" id="VvR-54-Ubm">
                                                     <rect key="frame" x="8" y="1" width="22" height="22"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Read Later" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xQn-we-sef">
@@ -238,7 +238,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="28"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="movie.png" translatesAutoresizingMaskIntoConstraints="NO" id="pau-4F-Azp">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ic_rated.png" translatesAutoresizingMaskIntoConstraints="NO" id="pau-4F-Azp">
                                                     <rect key="frame" x="8" y="1" width="22" height="22"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Rated" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="erb-lg-f6o">
@@ -257,7 +257,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="28"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="movie.png" translatesAutoresizingMaskIntoConstraints="NO" id="Kua-3N-HoK">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ic_watchlist.png" translatesAutoresizingMaskIntoConstraints="NO" id="Kua-3N-HoK">
                                                     <rect key="frame" x="8" y="1" width="22" height="22"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Watchlist" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yfj-JL-6ty">
@@ -306,7 +306,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x3G-VC-l3Z" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="381" y="279"/>
+            <point key="canvasLocation" x="212" y="281"/>
         </scene>
         <!--Martini Shots-->
         <scene sceneID="UoU-mk-HjR">
@@ -417,7 +417,9 @@
         <image name="ic_martinishots.png" width="15" height="15"/>
         <image name="ic_news.png" width="26" height="26"/>
         <image name="ic_photo.png" width="24" height="24"/>
+        <image name="ic_rated.png" width="24" height="24"/>
         <image name="ic_video.png" width="25" height="25"/>
+        <image name="ic_watchlist.png" width="25" height="25"/>
         <image name="menu" width="22" height="22"/>
         <image name="movie.png" width="22" height="22"/>
     </resources>
