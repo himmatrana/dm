@@ -22,9 +22,8 @@
 
 -(void)viewDidAppear:(BOOL)animated
 {
-    
+    [super viewDidAppear:animated];
     [super showNavigationWithTitle:@"Movies"];
-    
 }
 
 - (void)didReceiveMemoryWarning {

@@ -19,10 +19,17 @@
     // Do any additional setup after loading the view.
 }
 
+
+-(void)viewDidAppear:(BOOL)animated
+{
+    //[super viewDidAppear:animated];
+    [super showNavigationWithTitle:@"Martini Shots"];
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
 
 /*
 #pragma mark - Navigation

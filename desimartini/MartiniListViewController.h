@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface MartiniListViewController : UIViewController
+#import "BaseViewController.h"
+@interface MartiniListViewController : BaseViewController
 
 @end
