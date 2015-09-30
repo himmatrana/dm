@@ -340,12 +340,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Movies" id="zfL-Qh-20V">
-                        <barButtonItem key="leftBarButtonItem" image="menu" id="wmI-Gl-AQL"/>
-                    </navigationItem>
-                    <connections>
-                        <outlet property="sidebarButton" destination="wmI-Gl-AQL" id="mqj-of-fcs"/>
-                    </connections>
+                    <navigationItem key="navigationItem" title="Movies" id="zfL-Qh-20V"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VtG-7C-YPu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -364,16 +359,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.99420661489999995" green="0.98865238799999999" blue="0.99976084180000002" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Home" id="MUO-S7-ySr">
-                        <barButtonItem key="leftBarButtonItem" image="menu" id="vIM-fS-wAc"/>
-                    </navigationItem>
-                    <connections>
-                        <outlet property="sidebarButton" destination="vIM-fS-wAc" id="HZA-hh-4DU"/>
-                    </connections>
+                    <navigationItem key="navigationItem" title="Home" id="MUO-S7-ySr"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hGs-3j-M5J" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1200" y="218"/>
+            <point key="canvasLocation" x="1252" y="218"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="A6k-jB-3Bi">
@@ -420,7 +410,6 @@
         <image name="ic_rated.png" width="24" height="24"/>
         <image name="ic_video.png" width="25" height="25"/>
         <image name="ic_watchlist.png" width="25" height="25"/>
-        <image name="menu" width="22" height="22"/>
         <image name="movie.png" width="22" height="22"/>
     </resources>
     <inferredMetricsTieBreakers>

@@ -8,7 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import "BaseViewController.h"
-
+#import "MartiniListViewController.h"
 @interface MovieListViewController : BaseViewController
+- (IBAction)tempAction:(UIButton *)sender;
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *sidebarButton;
 @end

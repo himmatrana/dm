@@ -1,29 +1,24 @@
 //
-//  HomeViewController.m
+//  MartiniListViewController.m
 //  desimartini
 //
-//  Created by Himmat Rana on 24/09/15.
+//  Created by Himmat Rana on 30/09/15.
 //  Copyright © 2015 desimartini. All rights reserved.
 //
 
-#import "HomeViewController.h"
-#import "SWRevealViewController.h"
 #import "MartiniListViewController.h"
-@interface HomeViewController ()
+
+@interface MartiniListViewController ()
 
 @end
 
-@implementation HomeViewController
+@implementation MartiniListViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    // Do any additional setup after loading the view.
 }
 
--(void)viewDidAppear:(BOOL)animated
-{
-    
-    [super showNavigationWithTitle:@"Home"];
-}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
@@ -39,13 +34,4 @@
 }
 */
 
-- (IBAction)check:(UIButton *)sender {
-    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]];
-    MartiniListViewController *object = [storyboard instantiateViewControllerWithIdentifier:@"martini_listing"];
-    
-    [self.navigationController pushViewController:object animated:YES];
-    
-    
-    
-}
 @end

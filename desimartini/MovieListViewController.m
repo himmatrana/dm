@@ -17,15 +17,14 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    SWRevealViewController *revealViewController = self.revealViewController;
-    if ( revealViewController )
-    {
-        [self.sidebarButton setTarget: self.revealViewController];
-        [self.sidebarButton setAction: @selector( revealToggle: )];
-        [self.view addGestureRecognizer:self.revealViewController.panGestureRecognizer];
-    }
 
+}
 
+-(void)viewDidAppear:(BOOL)animated
+{
+    
+    [super showNavigationWithTitle:@"Movies"];
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -43,4 +42,12 @@
 }
 */
 
+- (IBAction)tempAction:(UIButton *)sender {
+    
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]];
+    MartiniListViewController *object = [storyboard instantiateViewControllerWithIdentifier:@"martini_listing"];
+    
+    [self.navigationController pushViewController:object animated:YES];
+    //[self.navigationController pushViewController: animated:<#(BOOL)#>]
+}
 @end
