@@ -16,6 +16,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self showData];
     // Do any additional setup after loading the view.
 }
 
@@ -30,15 +31,70 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(void)showData{
+    
+    NSURL *baseURL = [NSURL URLWithString:@"http://staging.desimartini.com"];
+    //NSDictionary *parameters = @{@"format": @"json"};
+    
 
-/*
-#pragma mark - Navigation
+    AFHTTPSessionManager *manager = [[AFHTTPSessionManager alloc] initWithBaseURL:baseURL];
+    manager.responseSerializer = [AFJSONResponseSerializer serializer];
+    
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+    NSLog(@"test");
+        [manager GET:@"/api/news/martini/" parameters:nil success:^(NSURLSessionDataTask *task, id responseObject)
+       {
+            NSDictionary *data =  (NSDictionary *)responseObject;
+            _martiniList = [data objectForKey:@"results"];
+            [self.martiniShotsTable reloadData];
+        }
+        failure:^(NSURLSessionDataTask *task, NSError *error)
+        {
+           NSLog(@"error");
+           /* UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Error Retrieving Weather"
+                                                                message:[error localizedDescription]
+                                                               delegate:nil
+                                                      cancelButtonTitle:@"Ok"
+                                                      otherButtonTitles:nil];
+            [alertView show];
+           */
+        }];
 }
-*/
+
+#pragma mark - UITableView Delegate/Datasource
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
+    return 1;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return [self.martiniList count];
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier: @"martini" forIndexPath: indexPath];
+    //News *news = [[News alloc] init];
+    NSDictionary *data = [self.martiniList objectAtIndex:indexPath.row];
+    NSLog(@"title=%@",[data objectForKey:@"title"]);
+    UILabel *title =     ((UILabel*)[cell.contentView viewWithTag:1002]);
+    
+    
+    title.text =  [data objectForKey:@"title"];
+    
+    //[((UIImageView*)[cell.contentView viewWithTag:1001]) setImageWithURLString:new.image usingActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
+    
+    
+    //((UILabel*)[cell.contentView viewWithTag:1003]).text = [NSString stringWithFormat:@"%@",newsObj.createdDate];
+    //((UILabel*)[cell.contentView viewWithTag:1004]).text = [NSString stringWithFormat:@"%@",newsObj.viewCount ];
+    
+    
+    return cell;
+}
+
+
 
 @end
