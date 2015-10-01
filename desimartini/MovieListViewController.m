@@ -23,7 +23,7 @@
 -(void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
-    [super showNavigationWithTitle:@"Movies"];
+    [super showNavigationWithTitle:NSLocalizedString(@"Movies", nil)];
 }
 
 - (void)didReceiveMemoryWarning {

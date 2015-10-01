@@ -38,6 +38,7 @@
 		5F04120F1BBBE3830068DC0B /* UIRefreshControl+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F0411FD1BBBE3830068DC0B /* UIRefreshControl+AFNetworking.m */; settings = {ASSET_TAGS = (); }; };
 		5F0412101BBBE3830068DC0B /* UIWebView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F0411FF1BBBE3830068DC0B /* UIWebView+AFNetworking.m */; settings = {ASSET_TAGS = (); }; };
 		5F433E301BBCFFF700E68464 /* Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F433E2F1BBCFFF700E68464 /* Utility.m */; settings = {ASSET_TAGS = (); }; };
+		5F433E351BBD407800E68464 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5F433E371BBD407800E68464 /* Localizable.strings */; };
 		5FF672D81BB403DC00AAB1AB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FF672D71BB403DC00AAB1AB /* main.m */; };
 		5FF672DB1BB403DC00AAB1AB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FF672DA1BB403DC00AAB1AB /* AppDelegate.m */; };
 		5FF672E11BB403DC00AAB1AB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FF672DF1BB403DC00AAB1AB /* Main.storyboard */; };
@@ -105,6 +106,10 @@
 		5F0411FF1BBBE3830068DC0B /* UIWebView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWebView+AFNetworking.m"; sourceTree = "<group>"; };
 		5F433E2E1BBCFFF700E68464 /* Utility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utility.h; sourceTree = "<group>"; };
 		5F433E2F1BBCFFF700E68464 /* Utility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utility.m; sourceTree = "<group>"; };
+		5F433E331BBD3FDE00E68464 /* hi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = hi; path = hi.lproj/Main.strings; sourceTree = "<group>"; };
+		5F433E341BBD3FDE00E68464 /* hi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = hi; path = hi.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		5F433E361BBD407800E68464 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		5F433E381BBD40A700E68464 /* hi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = hi; path = hi.lproj/Localizable.strings; sourceTree = "<group>"; };
 		5FF672D31BB403DC00AAB1AB /* desimartini.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = desimartini.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FF672D71BB403DC00AAB1AB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5FF672D91BB403DC00AAB1AB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -272,6 +277,7 @@
 				5FF672E41BB403DC00AAB1AB /* LaunchScreen.storyboard */,
 				5FF672E71BB403DC00AAB1AB /* Info.plist */,
 				5FF672D61BB403DC00AAB1AB /* Supporting Files */,
+				5F433E371BBD407800E68464 /* Localizable.strings */,
 			);
 			path = desimartini;
 			sourceTree = "<group>";
@@ -327,6 +333,7 @@
 			knownRegions = (
 				en,
 				Base,
+				hi,
 			);
 			mainGroup = 5FF672CA1BB403DC00AAB1AB;
 			productRefGroup = 5FF672D41BB403DC00AAB1AB /* Products */;
@@ -346,6 +353,7 @@
 				5F0411C81BBA66470068DC0B /* ic_martinishots.png in Resources */,
 				5F0411C21BBA49960068DC0B /* movie@2x.png in Resources */,
 				5F0411C41BBA65F50068DC0B /* ic_video.png in Resources */,
+				5F433E351BBD407800E68464 /* Localizable.strings in Resources */,
 				5F0411C01BBA49960068DC0B /* home@2x.png in Resources */,
 				5F0411CA1BBA67660068DC0B /* ic_news.png in Resources */,
 				5F0411CE1BBA6CBB0068DC0B /* ic_watchlist.png in Resources */,
@@ -399,10 +407,20 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		5F433E371BBD407800E68464 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5F433E361BBD407800E68464 /* en */,
+				5F433E381BBD40A700E68464 /* hi */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		5FF672DF1BB403DC00AAB1AB /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				5FF672E01BB403DC00AAB1AB /* Base */,
+				5F433E331BBD3FDE00E68464 /* hi */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -411,6 +429,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				5FF672E51BB403DC00AAB1AB /* Base */,
+				5F433E341BBD3FDE00E68464 /* hi */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";

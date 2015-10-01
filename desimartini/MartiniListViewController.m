@@ -17,8 +17,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    [self getMartiniList];
     self.martiniList =[[NSMutableArray alloc] init];
+    [self getMartiniList];
+    
     
 }
 
@@ -26,7 +27,7 @@
 -(void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
-    [super showNavigationWithTitle:@"Martini Shots"];
+    [super showNavigationWithTitle:NSLocalizedString(@"Martini Shots", nil)];
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

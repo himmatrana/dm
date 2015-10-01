@@ -1,0 +1,45 @@
+
+/* Class = "UILabel"; text = "News"; ObjectID = "0hV-cL-8A5"; */
+"0hV-cL-8A5.text" = "खबरें";
+
+/* Class = "UILabel"; text = "Home"; ObjectID = "AGf-Vf-Vkm"; */
+"AGf-Vf-Vkm.text" = "Home";
+
+/* Class = "UILabel"; text = "Martini title"; ObjectID = "Gf3-YV-7uB"; */
+"Gf3-YV-7uB.text" = "Martini title";
+
+/* Class = "UILabel"; text = "My List"; ObjectID = "GwE-Np-BZr"; */
+"GwE-Np-BZr.text" = "My List";
+
+/* Class = "UINavigationItem"; title = "Home"; ObjectID = "MUO-S7-ySr"; */
+"MUO-S7-ySr.title" = "Home";
+
+/* Class = "UILabel"; text = "Help"; ObjectID = "UTL-nS-SHg"; */
+"UTL-nS-SHg.text" = "Help";
+
+/* Class = "UILabel"; text = "Photos"; ObjectID = "W1c-06-dAr"; */
+"W1c-06-dAr.text" = "Photos";
+
+/* Class = "UINavigationItem"; title = "Martini Shots"; ObjectID = "Ya5-dc-qmf"; */
+"Ya5-dc-qmf.title" = "मार्टिनी शॉट्स";
+
+/* Class = "UILabel"; text = "Movies & Reviews"; ObjectID = "dri-rK-Drn"; */
+"dri-rK-Drn.text" = "मूवीज़";
+
+/* Class = "UILabel"; text = "Rated"; ObjectID = "erb-lg-f6o"; */
+"erb-lg-f6o.text" = "Rated";
+
+/* Class = "UILabel"; text = "Martini Shots"; ObjectID = "nVw-AJ-eVk"; */
+"nVw-AJ-eVk.text" = "मार्टिनी शॉट्स";
+
+/* Class = "UILabel"; text = "Trailers and Videos"; ObjectID = "teb-at-NC3"; */
+"teb-at-NC3.text" = "Trailers and Videos";
+
+/* Class = "UILabel"; text = "Read Later"; ObjectID = "xQn-we-sef"; */
+"xQn-we-sef.text" = "Read Later";
+
+/* Class = "UILabel"; text = "Watchlist"; ObjectID = "yfj-JL-6ty"; */
+"yfj-JL-6ty.text" = "Watchlist";
+
+/* Class = "UINavigationItem"; title = "Movies"; ObjectID = "zfL-Qh-20V"; */
+"zfL-Qh-20V.title" = "मूवीज़";
