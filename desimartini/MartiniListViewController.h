@@ -11,7 +11,8 @@
 #import "AFNetworking.h"
 #import "UIImageView+AFNetworking.h"
 @interface MartiniListViewController : BaseViewController<UITableViewDataSource, UITableViewDelegate>
- @property NSArray *martiniList;
+ @property NSMutableArray *martiniList;
  @property News *news;
+ @property NSString *nextURL;
  @property (weak, nonatomic) IBOutlet UITableView *martiniShotsTable;
 @end

@@ -14,16 +14,18 @@
 
 @implementation MartiniListViewController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
-    [self showData];
-    // Do any additional setup after loading the view.
+    [self getMartiniList];
+    self.martiniList =[[NSMutableArray alloc] init];
+    
 }
 
 
 -(void)viewDidAppear:(BOOL)animated
 {
-    //[super viewDidAppear:animated];
+    [super viewDidAppear:animated];
     [super showNavigationWithTitle:@"Martini Shots"];
 }
 - (void)didReceiveMemoryWarning {
@@ -31,34 +33,57 @@
     // Dispose of any resources that can be recreated.
 }
 
--(void)showData{
-    
-    NSURL *baseURL = [NSURL URLWithString:@"http://staging.desimartini.com"];
+
+-(void)getMartiniList
+{
+    AFHTTPSessionManager *manager;
+    NSURL *baseURL;
+    NSString *url;
+    if (self.nextURL != nil)
+    {
+       manager = [[AFHTTPSessionManager alloc] init];
+        url = self.nextURL;
+    }
+    else
+    {
+       baseURL = [NSURL URLWithString:@"http://staging.desimartini.com"];
+       manager = [[AFHTTPSessionManager alloc] initWithBaseURL:baseURL];
+       url = @"/api/news/martini/";
+    }
     //NSDictionary *parameters = @{@"format": @"json"};
     
-
-    AFHTTPSessionManager *manager = [[AFHTTPSessionManager alloc] initWithBaseURL:baseURL];
     manager.responseSerializer = [AFJSONResponseSerializer serializer];
+    [manager GET:url parameters:nil success:^(NSURLSessionDataTask *task, id responseObject)
+     {
+         NSDictionary *data =  (NSDictionary *)responseObject;
+         self.nextURL = [data objectForKey:@"next_url"];
+         if ([self.nextURL isKindOfClass:[NSNull class]])
+         {
+             self.nextURL = nil;
+         }
+         for (NSDictionary *tempData  in [data objectForKey:@"results"])
+         {
+             [_martiniList addObject:[News getNews:tempData]];
+         }
+         [self.martiniShotsTable reloadData];
+     }
+         failure:^(NSURLSessionDataTask *task, NSError *error)
+     {
+         NSLog(@"error");
+         /* UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Error Retrieving Weather"
+          message:[error localizedDescription]
+          delegate:nil
+          cancelButtonTitle:@"Ok"
+          otherButtonTitles:nil];
+          [alertView show];
+          */
+     }];
+}
+
+-(void)showData{
     
 
-    NSLog(@"test");
-        [manager GET:@"/api/news/martini/" parameters:nil success:^(NSURLSessionDataTask *task, id responseObject)
-       {
-            NSDictionary *data =  (NSDictionary *)responseObject;
-            _martiniList = [data objectForKey:@"results"];
-            [self.martiniShotsTable reloadData];
-        }
-        failure:^(NSURLSessionDataTask *task, NSError *error)
-        {
-           NSLog(@"error");
-           /* UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Error Retrieving Weather"
-                                                                message:[error localizedDescription]
-                                                               delegate:nil
-                                                      cancelButtonTitle:@"Ok"
-                                                      otherButtonTitles:nil];
-            [alertView show];
-           */
-        }];
+    
 }
 
 #pragma mark - UITableView Delegate/Datasource
@@ -77,30 +102,14 @@
 {
 
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier: @"martini" forIndexPath: indexPath];
-    //News *news = [[News alloc] init];
-    NSDictionary *data = [self.martiniList objectAtIndex:indexPath.row];
-    self.news = [[News alloc] init];
-    self.news.ID = [data objectForKey:@"id"];
-    self.news.title = [data objectForKey:@"title"];
-    self.news.image = [[[data objectForKey:@"news_thumbnail"] objectForKey:@"image_version2"] objectForKey:@"large"];
-    
-    //NSLog(@"title=%@",[data objectForKey:@"title"]);
+    self.news = [self.martiniList objectAtIndex:indexPath.row];
     __weak UITableViewCell *weakCell = cell;
     __weak UIImageView *martiniImage =     ((UIImageView*)[weakCell.contentView viewWithTag:1001]);
     UILabel *titleLabel =     ((UILabel*)[weakCell.contentView viewWithTag:1002]);
-
-    
-    
     titleLabel.text =  self.news.title;
-    
-    
-    
     NSURL *url = [NSURL URLWithString:self.news.image];
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
     UIImage *placeholderImage = [UIImage imageNamed:@"menu"];
-    
-
-    
     [martiniImage setImageWithURLRequest:request
                           placeholderImage:placeholderImage
                                    success:^(NSURLRequest *request, NSHTTPURLResponse *response, UIImage *image) {
@@ -110,6 +119,10 @@
                                        
                                    } failure:nil];
     
+    if (indexPath.row == [self.martiniList count] - 1 && self.nextURL != nil)
+    {
+        [self getMartiniList];
+    }
     
     //[((UIImageView*)[weakCell.contentView viewWithTag:1001]) setImageWithURLString:new.image usingActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
     

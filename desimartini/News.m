@@ -10,4 +10,16 @@
 
 @implementation News
 
++(News *) getNews:(NSDictionary *)news{
+    
+    News *tempNews = [[News alloc] init];
+    tempNews.ID = [news objectForKey:@"id"];
+    tempNews.title = [news objectForKey:@"title"];
+    tempNews.image = [[[news objectForKey:@"news_thumbnail"] objectForKey:@"image_version2"] objectForKey:@"large"];
+    
+    return tempNews;
+    
+}
+
+
 @end

@@ -25,4 +25,6 @@
 @property (nonatomic, retain) NSMutableArray *friendsData;
 @property (nonatomic, retain) NSString *url;
 
++(News *) getNews:(NSDictionary *)temp;
+
 @end
