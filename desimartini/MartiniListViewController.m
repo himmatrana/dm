@@ -79,13 +79,39 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier: @"martini" forIndexPath: indexPath];
     //News *news = [[News alloc] init];
     NSDictionary *data = [self.martiniList objectAtIndex:indexPath.row];
-    NSLog(@"title=%@",[data objectForKey:@"title"]);
-    UILabel *title =     ((UILabel*)[cell.contentView viewWithTag:1002]);
+    self.news = [[News alloc] init];
+    self.news.ID = [data objectForKey:@"id"];
+    self.news.title = [data objectForKey:@"title"];
+    self.news.image = [[[data objectForKey:@"news_thumbnail"] objectForKey:@"image_version2"] objectForKey:@"large"];
+    
+    //NSLog(@"title=%@",[data objectForKey:@"title"]);
+    __weak UITableViewCell *weakCell = cell;
+    __weak UIImageView *martiniImage =     ((UIImageView*)[weakCell.contentView viewWithTag:1001]);
+    UILabel *titleLabel =     ((UILabel*)[weakCell.contentView viewWithTag:1002]);
+
     
     
-    title.text =  [data objectForKey:@"title"];
+    titleLabel.text =  self.news.title;
     
-    //[((UIImageView*)[cell.contentView viewWithTag:1001]) setImageWithURLString:new.image usingActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
+    
+    
+    NSURL *url = [NSURL URLWithString:self.news.image];
+    NSURLRequest *request = [NSURLRequest requestWithURL:url];
+    UIImage *placeholderImage = [UIImage imageNamed:@"menu"];
+    
+
+    
+    [martiniImage setImageWithURLRequest:request
+                          placeholderImage:placeholderImage
+                                   success:^(NSURLRequest *request, NSHTTPURLResponse *response, UIImage *image) {
+                                       
+                                       martiniImage.image = image;
+                                       [weakCell setNeedsLayout];
+                                       
+                                   } failure:nil];
+    
+    
+    //[((UIImageView*)[weakCell.contentView viewWithTag:1001]) setImageWithURLString:new.image usingActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
     
     
     //((UILabel*)[cell.contentView viewWithTag:1003]).text = [NSString stringWithFormat:@"%@",newsObj.createdDate];
