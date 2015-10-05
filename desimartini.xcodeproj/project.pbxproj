@@ -41,6 +41,13 @@
 		5F111EF81BC23C4B0037E358 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5F111EF71BC23C4B0037E358 /* GoogleService-Info.plist */; settings = {ASSET_TAGS = (); }; };
 		5F433E301BBCFFF700E68464 /* Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F433E2F1BBCFFF700E68464 /* Utility.m */; settings = {ASSET_TAGS = (); }; };
 		5F433E351BBD407800E68464 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5F433E371BBD407800E68464 /* Localizable.strings */; };
+		5FA8FF171BC29BE7007768AC /* floatTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FA8FF131BC29BE7007768AC /* floatTableViewCell.m */; settings = {ASSET_TAGS = (); }; };
+		5FA8FF181BC29BE7007768AC /* floatTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5FA8FF141BC29BE7007768AC /* floatTableViewCell.xib */; settings = {ASSET_TAGS = (); }; };
+		5FA8FF191BC29BE7007768AC /* VCFloatingActionButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FA8FF161BC29BE7007768AC /* VCFloatingActionButton.m */; settings = {ASSET_TAGS = (); }; };
+		5FA8FF1D1BC2A215007768AC /* fb-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FA8FF1A1BC2A215007768AC /* fb-icon.png */; settings = {ASSET_TAGS = (); }; };
+		5FA8FF1E1BC2A215007768AC /* google-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FA8FF1B1BC2A215007768AC /* google-icon.png */; settings = {ASSET_TAGS = (); }; };
+		5FA8FF1F1BC2A215007768AC /* twitter-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FA8FF1C1BC2A215007768AC /* twitter-icon.png */; settings = {ASSET_TAGS = (); }; };
+		5FA8FF211BC2A453007768AC /* plus.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FA8FF201BC2A453007768AC /* plus.png */; settings = {ASSET_TAGS = (); }; };
 		5FF672D81BB403DC00AAB1AB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FF672D71BB403DC00AAB1AB /* main.m */; };
 		5FF672DB1BB403DC00AAB1AB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FF672DA1BB403DC00AAB1AB /* AppDelegate.m */; };
 		5FF672E11BB403DC00AAB1AB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FF672DF1BB403DC00AAB1AB /* Main.storyboard */; };
@@ -115,6 +122,15 @@
 		5F433E341BBD3FDE00E68464 /* hi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = hi; path = hi.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		5F433E361BBD407800E68464 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		5F433E381BBD40A700E68464 /* hi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = hi; path = hi.lproj/Localizable.strings; sourceTree = "<group>"; };
+		5FA8FF121BC29BE7007768AC /* floatTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = floatTableViewCell.h; sourceTree = "<group>"; };
+		5FA8FF131BC29BE7007768AC /* floatTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = floatTableViewCell.m; sourceTree = "<group>"; };
+		5FA8FF141BC29BE7007768AC /* floatTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = floatTableViewCell.xib; sourceTree = "<group>"; };
+		5FA8FF151BC29BE7007768AC /* VCFloatingActionButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCFloatingActionButton.h; sourceTree = "<group>"; };
+		5FA8FF161BC29BE7007768AC /* VCFloatingActionButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCFloatingActionButton.m; sourceTree = "<group>"; };
+		5FA8FF1A1BC2A215007768AC /* fb-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fb-icon.png"; sourceTree = "<group>"; };
+		5FA8FF1B1BC2A215007768AC /* google-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "google-icon.png"; sourceTree = "<group>"; };
+		5FA8FF1C1BC2A215007768AC /* twitter-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "twitter-icon.png"; sourceTree = "<group>"; };
+		5FA8FF201BC2A453007768AC /* plus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = plus.png; sourceTree = "<group>"; };
 		5FF672D31BB403DC00AAB1AB /* desimartini.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = desimartini.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FF672D71BB403DC00AAB1AB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5FF672D91BB403DC00AAB1AB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -223,6 +239,10 @@
 		5F5DDF2D1BB4172B00F43EBE /* images */ = {
 			isa = PBXGroup;
 			children = (
+				5FA8FF201BC2A453007768AC /* plus.png */,
+				5FA8FF1A1BC2A215007768AC /* fb-icon.png */,
+				5FA8FF1B1BC2A215007768AC /* google-icon.png */,
+				5FA8FF1C1BC2A215007768AC /* twitter-icon.png */,
 				5F0411CD1BBA6CBB0068DC0B /* ic_watchlist.png */,
 				5F0411CB1BBA6C950068DC0B /* ic_rated.png */,
 				5F0411C91BBA67660068DC0B /* ic_news.png */,
@@ -252,6 +272,18 @@
 				5F433E2F1BBCFFF700E68464 /* Utility.m */,
 			);
 			name = base;
+			sourceTree = "<group>";
+		};
+		5FA8FF111BC29BE7007768AC /* VCFloatingActionButton */ = {
+			isa = PBXGroup;
+			children = (
+				5FA8FF121BC29BE7007768AC /* floatTableViewCell.h */,
+				5FA8FF131BC29BE7007768AC /* floatTableViewCell.m */,
+				5FA8FF141BC29BE7007768AC /* floatTableViewCell.xib */,
+				5FA8FF151BC29BE7007768AC /* VCFloatingActionButton.h */,
+				5FA8FF161BC29BE7007768AC /* VCFloatingActionButton.m */,
+			);
+			path = VCFloatingActionButton;
 			sourceTree = "<group>";
 		};
 		5FD776F23A71B55060D49C1F /* Frameworks */ = {
@@ -285,6 +317,7 @@
 		5FF672D51BB403DC00AAB1AB /* desimartini */ = {
 			isa = PBXGroup;
 			children = (
+				5FA8FF111BC29BE7007768AC /* VCFloatingActionButton */,
 				5FF672DF1BB403DC00AAB1AB /* Main.storyboard */,
 				5F0411D91BBBE3830068DC0B /* AFNetworking */,
 				5F0411ED1BBBE3830068DC0B /* UIKit+AFNetworking */,
@@ -383,13 +416,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5FA8FF181BC29BE7007768AC /* floatTableViewCell.xib in Resources */,
 				5F0411C81BBA66470068DC0B /* ic_martinishots.png in Resources */,
 				5F0411C21BBA49960068DC0B /* movie@2x.png in Resources */,
+				5FA8FF1D1BC2A215007768AC /* fb-icon.png in Resources */,
 				5F111EF81BC23C4B0037E358 /* GoogleService-Info.plist in Resources */,
 				5F0411C41BBA65F50068DC0B /* ic_video.png in Resources */,
+				5FA8FF1F1BC2A215007768AC /* twitter-icon.png in Resources */,
 				5F433E351BBD407800E68464 /* Localizable.strings in Resources */,
 				5F0411C01BBA49960068DC0B /* home@2x.png in Resources */,
 				5F0411CA1BBA67660068DC0B /* ic_news.png in Resources */,
+				5FA8FF1E1BC2A215007768AC /* google-icon.png in Resources */,
+				5FA8FF211BC2A453007768AC /* plus.png in Resources */,
 				5F0411CE1BBA6CBB0068DC0B /* ic_watchlist.png in Resources */,
 				5F0411C61BBA66250068DC0B /* ic_photo.png in Resources */,
 				5F0411CC1BBA6C950068DC0B /* ic_rated.png in Resources */,
@@ -457,10 +495,12 @@
 				5F433E301BBCFFF700E68464 /* Utility.m in Sources */,
 				5F0411D81BBBC63A0068DC0B /* News.m in Sources */,
 				5F0412081BBBE3830068DC0B /* AFURLSessionManager.m in Sources */,
+				5FA8FF171BC29BE7007768AC /* floatTableViewCell.m in Sources */,
 				5FF672D81BB403DC00AAB1AB /* main.m in Sources */,
 				5F0412011BBBE3830068DC0B /* AFHTTPRequestOperationManager.m in Sources */,
 				5F04120E1BBBE3830068DC0B /* UIProgressView+AFNetworking.m in Sources */,
 				5F0411A61BB91ED80068DC0B /* MovieListViewController.m in Sources */,
+				5FA8FF191BC29BE7007768AC /* VCFloatingActionButton.m in Sources */,
 				5F04120C1BBBE3830068DC0B /* UIButton+AFNetworking.m in Sources */,
 				5F0412071BBBE3830068DC0B /* AFURLResponseSerialization.m in Sources */,
 				5FF672F81BB4045B00AAB1AB /* SWRevealViewController.m in Sources */,

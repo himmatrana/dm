@@ -10,17 +10,34 @@
 #import <Google/Analytics.h>
 
 @interface MartiniListViewController ()
+@property (strong, nonatomic) VCFloatingActionButton *addButton;
 
 @end
 
 @implementation MartiniListViewController
-
+@synthesize addButton;
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     self.martiniList =[[NSMutableArray alloc] init];
     [self getMartiniList];
     self.screenName = @"MartiniShots";
+    CGRect floatFrame = CGRectMake([UIScreen mainScreen].bounds.size.width - 44 - 20, [UIScreen mainScreen].bounds.size.height - 44 - 20, 44, 44);
+    
+    addButton = [[VCFloatingActionButton alloc]initWithFrame:floatFrame normalImage:[UIImage imageNamed:@"plus"] andPressedImage:[UIImage imageNamed:@"cross"] withScrollview:self.martiniShotsTable];
+    
+    //    NSDictionary *optionsDictionary = @{@"fb-icon":@"Facebook",@"twitter-icon":@"Twitter",@"google-icon":@"Google Plus",@"linkedin-icon":@"Linked in"};
+    //    addButton.menuItemSet = optionsDictionary;
+    
+    
+    addButton.imageArray = @[@"fb-icon",@"twitter-icon",@"google-icon",@"linkedin-icon"];
+    addButton.labelArray = @[@"Facebook",@"Twitter",@"Google Plus",@"Linked in"];
+    
+    
+    
+    addButton.hideWhileScrolling = YES;
+    addButton.delegate = self;
+    [self.view addSubview:addButton];
     
     
 }
@@ -139,6 +156,11 @@
     
     
     return cell;
+}
+
+-(void) didSelectMenuOptionAtIndex:(NSInteger)row
+{
+    NSLog(@"Floating action tapped index %tu",row);
 }
 
 

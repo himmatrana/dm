@@ -10,7 +10,8 @@
 #import "News.h"
 #import "AFNetworking.h"
 #import "UIImageView+AFNetworking.h"
-@interface MartiniListViewController : BaseViewController<UITableViewDataSource, UITableViewDelegate>
+#import "VCFloatingActionButton.h"
+@interface MartiniListViewController : BaseViewController<floatMenuDelegate,UITableViewDataSource, UITableViewDelegate>
  @property NSMutableArray *martiniList;
  @property News *news;
  @property NSString *nextURL;
