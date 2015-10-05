@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <Google/Analytics.h>
 
-@interface BaseViewController : UIViewController
+@interface BaseViewController : GAITrackedViewController //UIViewController
 -(void) showNavigationWithTitle:(NSString *)title;
 @end

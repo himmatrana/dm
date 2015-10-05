@@ -7,6 +7,7 @@
 //
 
 #import "MartiniListViewController.h"
+#import <Google/Analytics.h>
 
 @interface MartiniListViewController ()
 
@@ -19,6 +20,7 @@
     [super viewDidLoad];
     self.martiniList =[[NSMutableArray alloc] init];
     [self getMartiniList];
+    self.screenName = @"MartiniShots";
     
     
 }
@@ -28,6 +30,10 @@
 {
     [super viewDidAppear:animated];
     [super showNavigationWithTitle:NSLocalizedString(@"Martini Shots", nil)];
+    /*id<GAITracker> tracker = [[GAI sharedInstance] defaultTracker];
+    [tracker set:kGAIScreenName value:@"MartiniShots"];
+    [tracker send:[[GAIDictionaryBuilder createScreenView] build]];
+     */
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
